@@ -15,3 +15,11 @@ The ports section maps port 80 on the container to port 8080 on the host machine
 
 
 This line tells Docker to use the official Nginx image based on Alpine Linux as the base image for the container. The nginx:alpine image is a streamlined version of the Nginx web server, making it smaller and faster to download while still providing the essential Nginx functionality.
+
+
+<img width="331" alt="Screenshot 2024-10-06 at 2 27 26 PM" src="https://github.com/user-attachments/assets/3b55ed12-8448-4e01-9509-f318ed8e7274">
+
+
+This sets the working directory inside the container to /usr/share/nginx/html, which is the default directory where Nginx serves static files such as HTML, JavaScript, and CSS files. Any subsequent COPY or other file manipulation commands will be relative to this directory.
+
+
