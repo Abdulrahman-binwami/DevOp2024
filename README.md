@@ -26,3 +26,6 @@ This sets the working directory inside the container to /usr/share/nginx/html, w
 <img width="440" alt="Screenshot 2024-10-06 at 2 32 08 PM" src="https://github.com/user-attachments/assets/78224494-0a28-4270-901f-ada633ff96af">
 
 
+This line copies all the files from the current directory on your local machine (i.e., where the Dockerfile is located) into the container's /usr/share/nginx/html directory. These files are typically your static website files like index.html, CSS stylesheets, and JavaScript files. After this command, these static assets are ready to be served by Nginx.
+
+
