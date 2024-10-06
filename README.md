@@ -29,3 +29,11 @@ This sets the working directory inside the container to /usr/share/nginx/html, w
 This line copies all the files from the current directory on your local machine (i.e., where the Dockerfile is located) into the container's /usr/share/nginx/html directory. These files are typically your static website files like index.html, CSS stylesheets, and JavaScript files. After this command, these static assets are ready to be served by Nginx.
 
 
+<img width="311" alt="Screenshot 2024-10-06 at 2 32 32 PM" src="https://github.com/user-attachments/assets/a068dca5-4b3c-4408-9667-1308bc8fb1a2">
+
+
+This tells Docker that the container will listen on port 80 (the default HTTP port). While this doesn't actually open the port (that's done via Docker's networking configurations during container runtime), it signals that the application will be using port 80 to communicate, allowing external services or users to connect to the container on this port.
+
+
+Summary:
+This Dockerfile effectively creates a lightweight container that runs an Nginx server, serving static files from your local machine. You can use this container to host static websites or as a reverse proxy server.
