@@ -23,3 +23,6 @@ This line tells Docker to use the official Nginx image based on Alpine Linux as 
 This sets the working directory inside the container to /usr/share/nginx/html, which is the default directory where Nginx serves static files such as HTML, JavaScript, and CSS files. Any subsequent COPY or other file manipulation commands will be relative to this directory.
 
 
+<img width="440" alt="Screenshot 2024-10-06 at 2 32 08 PM" src="https://github.com/user-attachments/assets/78224494-0a28-4270-901f-ada633ff96af">
+
+
